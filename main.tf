@@ -1,3 +1,13 @@
+terraform {
+  backend "s3" {
+    bucket = "terraform-project54321"
+    key    = "terraform-project54321/backend/backend.tf"
+    region = "us-east-1"
+  }
+
+}
+
+
 provider "aws" {
   region = "us-east-1"
 }
